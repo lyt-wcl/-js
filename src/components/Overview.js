@@ -9,10 +9,15 @@ function Overview() {
     const getOption = () => {
         return {
             title: {
-                text: '美国历年的凶杀案'
+                text: '美国历年的凶杀案',
+                textStyle: {
+                    fontSize: 18,
+                    fontWeight: 'bolder',
+                    color: '#000000'          // 主标题文字颜色
+                }
             },
             tooltip: {
-                trigger: 'axis'
+                trigger: 'axis',
             },
             toolbox: {
                 show: true,
@@ -38,6 +43,12 @@ function Overview() {
                 type: 'value'
             },
             dataZoom: [
+                // {
+                //     backgroundColor: 'rgba(0,256,256,0)',       // 背景颜色
+                // },
+                // {
+                //     fillerColor: 'rgba(144,197,237,0.2)',
+                // },
                 {   // 这个dataZoom组件，默认控制x轴。
                     type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
                     start: 0,      // 左边在 10% 的位置。
