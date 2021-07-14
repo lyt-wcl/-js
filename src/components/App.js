@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
 
     //右边第二个区域
     detailView: {
-        id: 'main1',
+        id: 'main',
         position: 'absolute',
         bottom: 70,
         height: 270,
