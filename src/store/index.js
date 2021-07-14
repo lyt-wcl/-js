@@ -15,7 +15,7 @@ function StateProvider({children}) {
 
     // 初始化时，读取本地数据
     useEffect(() => {
-        fetchCsvData('./data.csv')
+        fetchCsvData('./2010年各州数据.csv')
         .then(res => {
             dispatch({
                 type: 'init1',
