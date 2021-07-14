@@ -13,13 +13,26 @@ const reducer = (state, action) => {
                 count: state.count - 1
             }
         case 'init': {
-            let newData = [];
+            let newData1 = [];
+
             // TODO: use action.payload to update newData
-            console.log(action.payload);
-            newData = action.payload;
+            
+            newData1 = action.payload;
+            console.log(newData1);
             return {
                 ...state,
-                data: newData
+                data1: newData1
+            };
+        }
+        case 'init1': {
+            let newData2 = [];
+            // TODO: use action.payload to update newData
+            // console.log(action.payload);
+            newData2 = action.payload;
+            console.log(newData2);
+            return {
+                ...state,
+                data2: newData2
             };
         }
         default:

@@ -14,15 +14,15 @@ function StateProvider({children}) {
     const [state, dispatch] = useReducer(reducer, initialState);
 
     // 初始化时，读取本地数据
-    // useEffect(() => {
-    //     fetchCsvData('./data.csv')
-    //       .then(res => {
-    //           dispatch({
-    //               type: 'init',
-    //               payload: res
-    //           })
-    //       })
-    // }, [])
+    useEffect(() => {
+        fetchCsvData('./data.csv')
+        .then(res => {
+            dispatch({
+                type: 'init1',
+                payload: res
+            })
+        })
+    }, [])
     useEffect(() => {
         fetchCsvData('./USA.csv')
           .then(res => {
@@ -31,6 +31,7 @@ function StateProvider({children}) {
                   payload: res
               })
           })
+      
     }, [])
     
 
