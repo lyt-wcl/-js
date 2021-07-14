@@ -39,7 +39,13 @@ const useStyles = makeStyles(theme => ({
         left: 70,
         width: 100,
     },
-
+    overview2: {
+        position: 'absolute',
+        top: 70,
+        bottom: 350,
+        width: 80,
+        right: 680,
+    },
     //右边第一个区域
     overview: {
         position: 'absolute',
