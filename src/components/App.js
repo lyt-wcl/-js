@@ -7,6 +7,7 @@ import AssistView from "./AssistView";
 import ControlPanel from "./ControlPanel";
 import Overview from "./Overview";
 import DetailView from "./DetailView";
+import Overview2 from "./Overview2";
 
 // 这是JSS的写法，相当于声明了一些css的类
 const useStyles = makeStyles(theme => ({
@@ -43,7 +44,7 @@ const useStyles = makeStyles(theme => ({
         position: 'absolute',
         top: 70,
         bottom: 350,
-        width: 80,
+        left: 180,
         right: 680,
     },
     //右边第一个区域
@@ -78,6 +79,7 @@ function App() {
         <div className={clsx(classes.view, classes.assistView)}><AssistView/></div>
         <div className={clsx(classes.view, classes.overview)}><Overview/></div>
         <div className={clsx(classes.view, classes.detailView)}><DetailView/></div>
+        <div className={clsx(classes.view, classes.overview2)}><Overview2/></div>
     </div>;
 }
 
