@@ -64,7 +64,7 @@ function Overview() {
             series: [{
                 data: state.data2.map(item=>item.sum),
                 name: '凶杀案数',
-                type: 'line',
+                type: 'bar',
                 smooth: true,
                 showBackground: true,
                 backgroundStyle: {
