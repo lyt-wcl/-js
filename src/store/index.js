@@ -18,11 +18,48 @@ function StateProvider({children}) {
         fetchCsvData('./2010年各州数据.csv')
         .then(res => {
             dispatch({
-                type: 'init1',
+                type: 'init2010',
                 payload: res
             })
         })
     }, [])
+    useEffect(() => {
+        fetchCsvData('./2011年各州数据.csv')
+        .then(res => {
+            dispatch({
+                type: 'init2011',
+                payload: res
+            })
+        })
+    }, [])
+    useEffect(() => {
+        fetchCsvData('./2012年各州数据.csv')
+        .then(res => {
+            dispatch({
+                type: 'init2012',
+                payload: res
+            })
+        })
+    }, [])
+    useEffect(() => {
+        fetchCsvData('./2013年各州数据.csv')
+        .then(res => {
+            dispatch({
+                type: 'init2013',
+                payload: res
+            })
+        })
+    }, [])
+    useEffect(() => {
+        fetchCsvData('./2014年各州数据.csv')
+        .then(res => {
+            dispatch({
+                type: 'init2014',
+                payload: res
+            })
+        })
+    }, [])
+
     useEffect(() => {
         fetchCsvData('./USA.csv')
           .then(res => {

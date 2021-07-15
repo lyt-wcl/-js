@@ -3,7 +3,11 @@
 const initialState = {
     count: 0,
     data1: [],
-    data2: [],
+    data2010: [],
+    data2011: [],
+    data2012: [],
+    data2013: [],
+    data2014: [],
 //    usaJSon: usaJson,
 };
 

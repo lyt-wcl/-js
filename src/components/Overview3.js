@@ -5,11 +5,10 @@ import 'echarts/map/js/china';
 
 function Overview() {
     const {state, dispatch} = useContext(store);
-
     const getOption = () => {
         return {
             title: {
-                text: '美国历年的凶杀案',
+                text: '各州历年凶杀案',
                 textStyle: {
                     fontSize: 18,
                     fontWeight: 'bolder',
@@ -33,22 +32,18 @@ function Overview() {
                 }
             },
             legend: {
-                data:['凶杀案数']
+                data:['2010年','2011年','2012年','2013年','2014年'],
+                selected:{'2010年':true,'2011年':false,'2012年':false,'2013年':false,'2014年':false},
+                selectedMode: 'single',
             },
             xAxis: {
                 type: 'category',
-                data: state.data2.map(item=>item.state)
+                data: state.data2010.map(item=>item.state)
             },
             yAxis: {
                 type: 'value'
             },
             dataZoom: [
-                // {
-                //     backgroundColor: 'rgba(0,256,256,0)',       // 背景颜色
-                // },
-                // {
-                //     fillerColor: 'rgba(144,197,237,0.2)',
-                // },
                 {   // 这个dataZoom组件，默认控制x轴。
                     type: 'slider', // 这个 dataZoom 组件是 slider 型 dataZoom 组件
                     start: 0,      // 左边在 10% 的位置。
@@ -61,16 +56,63 @@ function Overview() {
                 }
                 
                 ],
-            series: [{
-                data: state.data2.map(item=>item.sum),
-                name: '凶杀案数',
+            series: [
+            {
+                data: state.data2010.map(item=>item.sum),
+                name: '2010年',
                 type: 'bar',
                 smooth: true,
                 showBackground: true,
-                backgroundStyle: {
+                backgroundStyle: 
+                {
                     color: 'rgba(180, 180, 180, 0.2)'
-                }
-            }]
+                },
+            },
+            {
+                data: state.data2011.map(item=>item.sum),
+                name: '2011年',
+                type: 'bar',
+                smooth: true,
+                showBackground: true,
+                backgroundStyle: 
+                {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                },
+            },
+            {
+                data: state.data2012.map(item=>item.sum),
+                name: '2012年',
+                type: 'bar',
+                smooth: true,
+                showBackground: true,
+                backgroundStyle: 
+                {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                },
+            },
+            {
+                data: state.data2013.map(item=>item.sum),
+                name: '2013年',
+                type: 'bar',
+                smooth: true,
+                showBackground: true,
+                backgroundStyle: 
+                {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                },
+            },
+            {
+                data: state.data2014.map(item=>item.sum),
+                name: '2014年',
+                type: 'bar',
+                smooth: true,
+                showBackground: true,
+                backgroundStyle: 
+                {
+                    color: 'rgba(180, 180, 180, 0.2)'
+                },
+            }
+            ]   
             
         };
     };
