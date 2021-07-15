@@ -28,8 +28,8 @@ const useStyles = makeStyles(theme => ({
     {
         position: 'absolute',
         top: 70,
-        height: 100,
         left: 70,
+        height: 100,        
         width: 100,
     },
     
@@ -49,6 +49,8 @@ const useStyles = makeStyles(theme => ({
         left: 180,
         right: 680,
     },
+
+    //中间第二个区域
     overview3: {
         position: 'absolute',
         top: 380,
@@ -68,7 +70,6 @@ const useStyles = makeStyles(theme => ({
 
     //右边第二个区域
     detailView: {
-        id: 'main',
         position: 'absolute',
         bottom: 70,
         height: 270,
