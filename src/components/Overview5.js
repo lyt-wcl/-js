@@ -37,7 +37,7 @@ function Overview() {
             },
             xAxis: {
                 type: 'category',
-                data: state.data1.map(item=>item.year)
+                data: state.dataage.map(item=>item.victim_age)
             },
             yAxis: {
                 type: 'value'
@@ -55,7 +55,7 @@ function Overview() {
                 }
                 ],
             series: [{
-                data: state.data1.map(item=>item.sum),
+                data: state.dataage.map(item=>item.sum),
                 name: '凶杀案数',
                 type: 'line',
                 smooth: true,

@@ -24,9 +24,6 @@ function Overview() {
                     dataView: { 
                         readOnly: false
                     }, //数据视图
-                    magicType: {
-                        type: ['line', 'bar']
-                    },  //切换为折线图，切换为柱状图
                     restore: {},  //还原
                     saveAsImage: {}   //保存为图片
                 }

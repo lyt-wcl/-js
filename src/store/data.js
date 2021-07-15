@@ -8,6 +8,7 @@ const initialState = {
     data2012: [],
     data2013: [],
     data2014: [],
+    dataage:[],
 //    usaJSon: usaJson,
 };
 

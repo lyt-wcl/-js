@@ -14,7 +14,7 @@ function Overview() {
         //formatter: "{a} <br/>{b}: {c} ({d}%)"//模板变量有 {a}、{b}、{c}、{d}，分别表示系列名，数据名，数据值，百分比。
      },
      title: {
-         text: '2010-2014作案方式数据',
+         text: '杀害婴儿与杀人犯',
          left: 'center'
      },
      legend: {
@@ -45,14 +45,12 @@ function Overview() {
             },
             
              data: [
-                {value: 39473, name: '枪杀'},
-                {value: 29, name: '爆炸'},
-                {value: 15801, name: '冷兵器'},  
-                {value: 15, name: '高处坠落'},
-                {value: 11935, name: '火灾'},
-                {value: 416, name: '毒杀'},  
-                {value: 4911, name: '未知'},               
-                {value: 1106, name: '窒息'},  
+                {value: 566, name: '亲儿子'},
+                {value: 460, name: '亲女儿'},
+                {value: 142, name: '其余的亲人'},  
+                {value: 103, name: '熟人'},
+                {value: 483, name: '未知'},
+                {value: 27, name: '陌生人'},
             ],
             emphasis: {
                 itemStyle: {
@@ -81,14 +79,13 @@ function Overview() {
                },
            },
             data: [
-               {value: 39473, name: '枪杀'},
-               {value: 29, name: '爆炸'},
-               {value: 15801, name: '冷兵器'},  
-               {value: 15, name: '高处坠落'},
-               {value: 11935, name: '火灾'},
-               {value: 416, name: '毒杀'},  
-               {value: 4911, name: '未知'},               
-               {value: 1106, name: '窒息'},                         
+                {value: 566, name: '亲儿子'},
+                {value: 460, name: '亲女儿'},
+                {value: 142, name: '其余的亲人'},  
+                {value: 103, name: '熟人'},
+                {value: 483, name: '未知'},
+                {value: 27, name: '陌生人'},
+                         
            ],
        }
 

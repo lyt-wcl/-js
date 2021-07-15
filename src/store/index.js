@@ -59,6 +59,15 @@ function StateProvider({children}) {
             })
         })
     }, [])
+    useEffect(() => {
+        fetchCsvData('./受害者年龄分布.csv')
+        .then(res => {
+            dispatch({
+                type: 'initage',
+                payload: res
+            })
+        })
+    }, [])
 
     useEffect(() => {
         fetchCsvData('./USA.csv')

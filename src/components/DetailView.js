@@ -86,6 +86,7 @@ const option = {
       textFixed: {
         Alaska: [20, -20]
       },
+
       data: [
         { name: "Alabama", value: 191 },
         { name: "Alaska", value: 43 },

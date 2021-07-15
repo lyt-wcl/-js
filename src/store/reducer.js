@@ -26,8 +26,6 @@ const reducer = (state, action) => {
         }
         case 'init2010': {
             let newData2010 = [];
-            // TODO: use action.payload to update newData
-            // console.log(action.payload);
             newData2010 = action.payload;
             console.log(newData2010);
             return {
@@ -37,8 +35,6 @@ const reducer = (state, action) => {
         }
         case 'init2011': {
             let newData2011 = [];
-            // TODO: use action.payload to update newData
-            // console.log(action.payload);
             newData2011 = action.payload;
             console.log(newData2011);
             return {
@@ -48,8 +44,6 @@ const reducer = (state, action) => {
         }
         case 'init2012': {
             let newData2012 = [];
-            // TODO: use action.payload to update newData
-            // console.log(action.payload);
             newData2012 = action.payload;
             console.log(newData2012);
             return {
@@ -59,8 +53,6 @@ const reducer = (state, action) => {
         }
         case 'init2013': {
             let newData2013 = [];
-            // TODO: use action.payload to update newData
-            // console.log(action.payload);
             newData2013 = action.payload;
             console.log(newData2013);
             return {
@@ -70,13 +62,20 @@ const reducer = (state, action) => {
         }
         case 'init2014': {
             let newData2014 = [];
-            // TODO: use action.payload to update newData
-            // console.log(action.payload);
             newData2014 = action.payload;
             console.log(newData2014);
             return {
                 ...state,
                 data2014: newData2014
+            };
+        }
+        case 'initage': {
+            let newDataage = [];
+            newDataage = action.payload;
+            console.log(newDataage);
+            return {
+                ...state,
+                dataage: newDataage
             };
         }
         default:
