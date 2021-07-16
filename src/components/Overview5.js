@@ -36,10 +36,12 @@ function Overview() {
                 data:['数量']
             },
             xAxis: {
+                name:'年龄(岁)',
                 type: 'category',
                 data: state.dataage.map(item=>item.victim_age)
             },
             yAxis: {
+                name:'人数(个)',
                 type: 'value'
             },
             dataZoom: [

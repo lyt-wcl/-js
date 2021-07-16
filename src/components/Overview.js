@@ -35,10 +35,12 @@ function Overview() {
                 data:['凶杀案数']
             },
             xAxis: {
+                name:'年份(year)',
                 type: 'category',
                 data: state.data1.map(item=>item.year)
             },
             yAxis: {
+                name:'人数(个)',
                 type: 'value'
             },
             dataZoom: [

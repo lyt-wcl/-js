@@ -34,10 +34,13 @@ function Overview() {
                 selectedMode: 'single',
             },
             xAxis: {
+                name:'州',
                 type: 'category',
                 data: state.data2010.map(item=>item.state)
             },
             yAxis: {
+                
+                name:'数量(件)',
                 type: 'value'
             },
             dataZoom: [
@@ -140,10 +143,13 @@ function Overview() {
                 selectedMode: 'single',
             },
             xAxis: {
+                name:'州',
                 type: 'category',
                 data: state.data2010.map(item=>item.state)
             },
             yAxis: {
+                
+                name:'数量(件)',
                 type: 'value'
             },
             dataZoom: [
@@ -246,10 +252,13 @@ function Overview() {
                 selectedMode: 'single',
             },
             xAxis: {
+                name:'州',
                 type: 'category',
                 data: state.data2010.map(item=>item.state)
             },
             yAxis: {
+                
+                name:'数量(件)',
                 type: 'value'
             },
             dataZoom: [
@@ -352,10 +361,13 @@ function Overview() {
                 selectedMode: 'single',
             },
             xAxis: {
+                name:'州',
                 type: 'category',
                 data: state.data2010.map(item=>item.state)
             },
             yAxis: {
+                
+                name:'数量(件)',
                 type: 'value'
             },
             dataZoom: [
@@ -458,10 +470,13 @@ function Overview() {
                 selectedMode: 'single',
             },
             xAxis: {
+                name:'州',
                 type: 'category',
                 data: state.data2010.map(item=>item.state)
             },
             yAxis: {
+                
+                name:'数量(件)',
                 type: 'value'
             },
             dataZoom: [
