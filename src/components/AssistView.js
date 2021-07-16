@@ -23,6 +23,7 @@ class AssistView extends React.Component {
             <p>{state.count}</p>
             <button onClick={() => dispatch({ type: 'increment' })}>add</button>
             <button onClick={() => dispatch({ type: 'subcrement' })}>sub</button>
+            <p>122434235</p>
         </div>;
     }
 }
