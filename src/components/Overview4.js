@@ -14,7 +14,7 @@ function Overview() {
         //formatter: "{a} <br/>{b}: {c} ({d}%)"//模板变量有 {a}、{b}、{c}、{d}，分别表示系列名，数据名，数据值，百分比。
      },
      title: {
-         text: '杀害婴儿与杀人犯',
+         text: '被害婴儿与杀人犯的关系',
          left: 'center'
      },
      legend: {
@@ -23,7 +23,7 @@ function Overview() {
      },
     series: [
         {
-             name: '作案方式',
+             name: '关系',
              type: 'pie',
              radius: '50%',
              avoidLabelOverlap: false,
@@ -45,9 +45,8 @@ function Overview() {
             },
             
              data: [
-                {value: 566, name: '亲儿子'},
-                {value: 460, name: '亲女儿'},
-                {value: 142, name: '其余的亲人'},  
+                {value: 1133, name: '家庭成员'},
+                {value: 35, name: '继子/继女'},  
                 {value: 103, name: '熟人'},
                 {value: 483, name: '未知'},
                 {value: 27, name: '陌生人'},
@@ -69,7 +68,7 @@ function Overview() {
                 normal: {
                    show: true,
                    position: 'outside',
-                   formatter: '{b}%',//模板变量有 {a}、{b}、{c}、{d}，分别表示系列名，数据名，数据值，百分比。{d}数据会根据value值计算百分比
+                   formatter: '{b}',//模板变量有 {a}、{b}、{c}、{d}，分别表示系列名，数据名，数据值，百分比。{d}数据会根据value值计算百分比
                    textStyle : {                   
                    align : 'center',
                    baseline : 'middle',
@@ -79,13 +78,11 @@ function Overview() {
                },
            },
             data: [
-                {value: 566, name: '亲儿子'},
-                {value: 460, name: '亲女儿'},
-                {value: 142, name: '其余的亲人'},  
+                {value: 1133, name: '家庭成员'},
+                {value: 35, name: '继子/继女'},  
                 {value: 103, name: '熟人'},
                 {value: 483, name: '未知'},
-                {value: 27, name: '陌生人'},
-                         
+                {value: 27, name: '陌生人'},                    
            ],
        }
 

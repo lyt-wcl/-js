@@ -9,7 +9,7 @@ function Overview() {
     const getOption = () => {
         return {
             title: {
-                text: '美国历年的凶杀案',
+                text: '美受害者年龄分布',
                 textStyle: {
                     fontSize: 18,
                     fontWeight: 'bolder',
@@ -33,7 +33,7 @@ function Overview() {
                 }
             },
             legend: {
-                data:['凶杀案数']
+                data:['数量']
             },
             xAxis: {
                 type: 'category',
@@ -56,7 +56,7 @@ function Overview() {
                 ],
             series: [{
                 data: state.dataage.map(item=>item.sum),
-                name: '凶杀案数',
+                name: '数量',
                 type: 'line',
                 smooth: true,
                 showBackground: true,

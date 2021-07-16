@@ -5,7 +5,7 @@ import ReactEcharts from "echarts-for-react";
 function Overview() {
     const {state, dispatch} = useContext(store);
     const getOption = () => {
-        if(state.count==0)
+        if(state.count==2010)
         return {
             title: {
                 text: '各州历年凶杀案',
@@ -111,7 +111,7 @@ function Overview() {
             }
             ]               
         };
-        else if(state.count==1)
+        else if(state.count==2011)
         return {
             title: {
                 text: '各州历年凶杀案',
@@ -217,7 +217,7 @@ function Overview() {
             }
             ]               
         };
-        if(state.count==2)
+        if(state.count==2012)
         return {
             title: {
                 text: '各州历年凶杀案',
@@ -323,7 +323,7 @@ function Overview() {
             }
             ]               
         };
-        if(state.count==4)
+        if(state.count==2013)
         return {
             title: {
                 text: '各州历年凶杀案',

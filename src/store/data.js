@@ -1,7 +1,7 @@
 //import usaJson from 'public\USA.json'
 // 初始数据
 const initialState = {
-    count: 0,
+    count: 2010,
     data1: [],
     data2010: [],
     data2011: [],
