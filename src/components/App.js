@@ -11,6 +11,7 @@ import Overview2 from "./Overview2";
 import Overview3 from "./Overview3";
 import Overview4 from "./Overview4";
 import Overview5 from "./Overview5";
+import Paragraph1 from "./Paragragh1";
 
 // 这是JSS的写法，相当于声明了一些css的类
 const useStyles = makeStyles(theme => ({
@@ -18,16 +19,34 @@ const useStyles = makeStyles(theme => ({
         position: 'relative',
         width: '100vw',
         height: '100vh',
-        overflow: 'hidden',
+        overflowX: 'hidden',
+        overflowY: 'auto',
     },
     view: {
-        border: '1px solid black',
+        border: '0px solid grey',
         borderRadius: '5px',
+        backgroundColor:'#ffffffbe',
+    },
+
+    //右边第一个区域 美国历年（1
+    overview: {
+        position: 'absolute',
+        top: 70,
+        height: 300,
+        width: 600,
+        left: 500,
+    },
+
+    paragraph1: {
+        position: 'absolute',
+        top: 400,
+        height: 300,
+        width: 600,
+        left: 500,
     },
 
     //左上角第一区域
-    controlPanel: 
-    {
+    controlPanel: {
         position: 'absolute',
         top: 70,
         left: 70,
@@ -43,7 +62,7 @@ const useStyles = makeStyles(theme => ({
         left: 70,
         width: 100,
     },
-    //中上间第一个区域
+    //中上间第一个区域 作案方式
     overview2: {
         position: 'absolute',
         top: 70,
@@ -51,7 +70,7 @@ const useStyles = makeStyles(theme => ({
         left: 180,
         width:400,
     },
-    //中上第二个区域
+    //中上第二个区域 婴儿和杀人犯
     overview4: {
         position: 'absolute',
         top: 70,
@@ -60,7 +79,7 @@ const useStyles = makeStyles(theme => ({
         width:400,
     },
 
-    //下中间第一个区域
+    //下中间第一个区域 各州历年
     overview3: {
         position: 'absolute',
         top: 380,
@@ -68,6 +87,7 @@ const useStyles = makeStyles(theme => ({
         left: 180,
         width:400,
     },
+    //被害者年龄分布
     overview5: {
         position: 'absolute',
         top: 380,
@@ -76,16 +96,9 @@ const useStyles = makeStyles(theme => ({
         width:400,
     },
     
-    //右边第一个区域
-    overview: {
-        position: 'absolute',
-        top: 70,
-        height: 300,
-        width: 600,
-        left: 990,
-    },
+    
 
-    //右边第二个区域
+    //右边第二个区域 地图
     detailView: {
         position: 'absolute',
         top: 380,
@@ -112,6 +125,7 @@ function App() {
         <div className={clsx(classes.view, classes.overview3)}><Overview3/></div>
         <div className={clsx(classes.view, classes.overview4)}><Overview4/></div>
         <div className={clsx(classes.view, classes.overview5)}><Overview5/></div>
+        <div className={clsx(classes.view, classes.paragraph1)}><Paragraph1/></div>
     </div>;
 }
 
