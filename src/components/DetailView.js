@@ -424,8 +424,8 @@ const Chart = () => {
   const option = useMemo(() => {
     return {
       title: {
-        text: "各州凶杀案数(2010)",
-        left: "right"
+        text: "各州凶杀案数",
+        left: "left"
       },
       tooltip: {
         trigger: "item",
@@ -462,7 +462,7 @@ const Chart = () => {
       toolbox: {
         show: true,
         //orient: 'vertical',
-        left: "left",
+        left: "right",
         top: "top",
         feature: {
           dataView: { readOnly: false },
