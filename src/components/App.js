@@ -11,6 +11,8 @@ import Overview2 from "./Overview2";
 import Overview3 from "./Overview3";
 import Overview4 from "./Overview4";
 import Overview5 from "./Overview5";
+import Overview6 from "./Overview6";
+import Overview7 from "./Overview7";
 import Paragraph1 from "./Paragragh1";
 
 // 这是JSS的写法，相当于声明了一些css的类
@@ -95,8 +97,22 @@ const useStyles = makeStyles(theme => ({
         left: 580,
         width:400,
     },
-    
-    
+    //2010-2014年0-17岁受害人被杀害方式
+    overview6: {
+        position: 'absolute',
+        top: 350,
+        height: 300,
+        left: 580,
+        width:400,
+    },
+    //2010-2014年18-30岁受害人被杀害方式
+    overview7: {
+        position: 'absolute',
+        top: 70,
+        height: 300,
+        right: 70,
+        width:400,
+    },
 
     //右边第二个区域 地图
     detailView: {
@@ -106,6 +122,9 @@ const useStyles = makeStyles(theme => ({
         width:600,
         left: 990,
     },
+
+    
+    
 }))
 
 // App组件
@@ -125,6 +144,8 @@ function App() {
         <div className={clsx(classes.view, classes.overview3)}><Overview3/></div>
         <div className={clsx(classes.view, classes.overview4)}><Overview4/></div>
         <div className={clsx(classes.view, classes.overview5)}><Overview5/></div>
+        <div className={clsx(classes.view, classes.overview6)}><Overview6/></div>
+        <div className={clsx(classes.view, classes.overview7)}><Overview7/></div>
         <div className={clsx(classes.view, classes.paragraph1)}><Paragraph1/></div>
     </div>;
 }
