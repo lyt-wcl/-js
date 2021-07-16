@@ -91,7 +91,6 @@ function Overview() {
                {value: 1106, name: '窒息'},                         
            ],
        }
-
     ]
     
         };

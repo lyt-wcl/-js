@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import { store } from "../store";
 import ReactEcharts from "echarts-for-react";
-import 'echarts/map/js/china';
 
 function Overview() {
     const {state, dispatch} = useContext(store);
@@ -63,9 +62,7 @@ function Overview() {
                 backgroundStyle: {
                     color: 'rgba(180, 180, 180, 0.2)'
                 }
-            }]
-            
-            
+            }]    
         };
     };
 
