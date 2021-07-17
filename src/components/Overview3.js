@@ -4,6 +4,7 @@ import ReactEcharts from "echarts-for-react";
 
 function Overview() {
     const {state, dispatch} = useContext(store);
+
     const getOption = () => {
         if(state.count==2010)
         return {
@@ -551,10 +552,14 @@ function Overview() {
             ]               
         };
     };
+    
 
     return <div>
+        <p>{state.count}</p>
+        <button onClick={() => dispatch({type: 'increment'})}>add</button>
+        <button onClick={() => dispatch({type: 'subcrement'})}>sub</button>
         <ReactEcharts option={getOption()} />;
-    </div>
+    </div>;
 }
 
 export default Overview;

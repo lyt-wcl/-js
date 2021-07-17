@@ -3,8 +3,7 @@
 import React from 'react';
 import clsx from "clsx";
 import {makeStyles} from "@material-ui/core";
-import AssistView from "./AssistView";
-import ControlPanel from "./ControlPanel";
+
 import Overview from "./Overview";
 import DetailView from "./DetailView";
 import Overview2 from "./Overview2";
@@ -13,7 +12,12 @@ import Overview4 from "./Overview4";
 import Overview5 from "./Overview5";
 import Overview6 from "./Overview6";
 import Overview7 from "./Overview7";
-import Paragraph1 from "./Paragragh1";
+import Paragraph1 from "./Paragraph1";
+import Paragraph2 from "./Paragraph2";
+import Paragraph3 from "./Paragraph3";
+import Paragraph4 from "./Paragraph4";
+import Paragraph5 from "./Paragraph5";
+import Paragraph6 from "./Paragraph6";
 
 // 这是JSS的写法，相当于声明了一些css的类
 const useStyles = makeStyles(theme => ({
@@ -34,8 +38,8 @@ const useStyles = makeStyles(theme => ({
     overview: {
         position: 'absolute',
         top: 70,
-        height: 300,
-        width: 600,
+        height: 350,
+        width: 800,
         left: 500,
     },
 
@@ -43,88 +47,124 @@ const useStyles = makeStyles(theme => ({
         position: 'absolute',
         top: 400,
         height: 300,
-        width: 600,
-        left: 500,
+        width: 800,
+        left: 450,
+        color:'#ffffff',
+        fontSize:30,
     },
 
-    //左上角第一区域
-    controlPanel: {
-        position: 'absolute',
-        top: 70,
-        left: 70,
-        height: 100,        
-        width: 100,
-    },
-    
-    //左边第二个区域
-    assistView: {
-        position: 'absolute',
-        top: 180,
-        height:500,
-        left: 70,
-        width: 100,
-    },
-    //中上间第一个区域 作案方式
-    overview2: {
-        position: 'absolute',
-        top: 70,
-        height: 300,
-        left: 180,
-        width:400,
-    },
-    //中上第二个区域 婴儿和杀人犯
-    overview4: {
-        position: 'absolute',
-        top: 70,
-        height: 300,
-        left: 580,
-        width:400,
-    },
-
-    //下中间第一个区域 各州历年
+    //下中间第一个区域 各州历年(2.1
     overview3: {
         position: 'absolute',
-        top: 380,
-        height: 300,
-        left: 180,
-        width:400,
-    },
-    //被害者年龄分布
-    overview5: {
-        position: 'absolute',
-        top: 380,
-        height: 300,
-        left: 580,
-        width:400,
-    },
-    //2010-2014年0-17岁受害人被杀害方式
-    overview6: {
-        position: 'absolute',
-        top: 350,
-        height: 300,
-        left: 580,
-        width:400,
-    },
-    //2010-2014年18-30岁受害人被杀害方式
-    overview7: {
-        position: 'absolute',
-        top: 70,
-        height: 300,
-        right: 70,
-        width:400,
+        top: 720,
+        height: 400,
+        left: 130,
+        width:700,
     },
 
-    //右边第二个区域 地图
+    //右边第二个区域 地图(2.2
     detailView: {
         position: 'absolute',
-        top: 380,
-        height: 290,
-        width:600,
-        left: 990,
+        top: 720,
+        height: 400,
+        width:700,
+        left: 850,
     },
 
+    paragraph2: {
+        position: 'absolute',
+        top: 1150,
+        height: 300,
+        width: 800,
+        left: 450,
+        color:'#ffffff',
+        fontSize:30,
+    },
+
+    //被害者年龄分布(3
+    overview5: {
+        position: 'absolute',
+        top: 1470,
+        height: 300,
+        width: 600,
+        left: 550,
+    },
+
+    paragraph3: {
+        position: 'absolute',
+        top: 1800,
+        height: 300,
+        width: 800,
+        left: 450,
+        color:'#ffffff',
+        fontSize:30,
+    },
+
+    //婴儿和杀人犯(4
+    overview4: {
+        position: 'absolute',
+        top: 2120,
+        height: 300,
+        left: 550,
+        width:600,
+    },
+
+    paragraph4: {
+        position: 'absolute',
+        top: 2440,
+        height: 300,
+        width: 800,
+        left: 450,
+        color:'#ffffff',
+        fontSize:30,
+    },
+
+    //2010-2014年0-17岁受害人被杀害方式(5.1
+    overview6: {
+        position: 'absolute',
+        top: 2760,
+        height: 300,
+        left: 230,
+        width:600,
+    },
+    //2010-2014年18-30岁受害人被杀害方式(5.2
+    overview7: {
+        position: 'absolute',
+        top: 2760,
+        height: 300,
+        width:600,
+        left: 850,
+    },
+
+    paragraph5: {
+        position: 'absolute',
+        top: 3080,
+        height: 300,
+        width: 800,
+        left: 450,
+        color:'#ffffff',
+        fontSize:30,
+    },
+
+    //作案方式(6
+    overview2: {
+        position: 'absolute',
+        top: 3400,
+        height: 300,
+        left: 550,
+        width:600,
+    },
     
-    
+    paragraph6: {
+        position: 'absolute',
+        top: 3720,
+        height: 300,
+        width: 800,
+        left: 450,
+        color:'#ffffff',
+        fontSize:30,
+    },
+
 }))
 
 // App组件
@@ -136,8 +176,6 @@ function App() {
     // 可视化项目中，若干视图一般采用绝对布局，方便后续调整各个视图的位置与大小
     // 目前四个视图都是一样的，查看AssistView的注释
     return <div className={classes.root}>
-        <div className={clsx(classes.view, classes.controlPanel)}><ControlPanel/></div>
-        <div className={clsx(classes.view, classes.assistView)}><AssistView/></div>
         <div className={clsx(classes.view, classes.overview)}><Overview/></div>
         <div className={clsx(classes.view, classes.detailView)}><DetailView/></div>
         <div className={clsx(classes.view, classes.overview2)}><Overview2/></div>
@@ -146,7 +184,12 @@ function App() {
         <div className={clsx(classes.view, classes.overview5)}><Overview5/></div>
         <div className={clsx(classes.view, classes.overview6)}><Overview6/></div>
         <div className={clsx(classes.view, classes.overview7)}><Overview7/></div>
-        <div className={clsx(classes.view, classes.paragraph1)}><Paragraph1/></div>
+        <div className={classes.paragraph1}><Paragraph1/></div>
+        <div className={classes.paragraph2}><Paragraph2/></div>
+        <div className={classes.paragraph3}><Paragraph3/></div>
+        <div className={classes.paragraph4}><Paragraph4/></div>
+        <div className={classes.paragraph5}><Paragraph5/></div>
+        <div className={classes.paragraph6}><Paragraph6/></div>
     </div>;
 }
 
