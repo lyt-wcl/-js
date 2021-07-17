@@ -69,7 +69,7 @@ function Overview() {
     };
 
     return <div>
-        <ReactEcharts option={getOption()} />;
+        <ReactEcharts option={getOption()} style={{height:"358px"}}/>;
     </div>
 }
 

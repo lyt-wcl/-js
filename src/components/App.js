@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
         top: 70,
         height: 350,
         width: 800,
-        left: 500,
+        left: 480,
     },
 
     paragraph1: {
@@ -85,14 +85,14 @@ const useStyles = makeStyles(theme => ({
     overview5: {
         position: 'absolute',
         top: 1470,
-        height: 300,
-        width: 600,
-        left: 550,
+        height: 350,
+        width: 800,
+        left: 480,
     },
 
     paragraph3: {
         position: 'absolute',
-        top: 1800,
+        top: 1840,
         height: 300,
         width: 800,
         left: 450,
@@ -103,15 +103,15 @@ const useStyles = makeStyles(theme => ({
     //婴儿和杀人犯(4
     overview4: {
         position: 'absolute',
-        top: 2120,
-        height: 300,
-        left: 550,
-        width:600,
+        top: 2160,
+        height: 350,
+        width: 800,
+        left: 480,
     },
 
     paragraph4: {
         position: 'absolute',
-        top: 2440,
+        top: 2530,
         height: 300,
         width: 800,
         left: 450,
@@ -122,23 +122,23 @@ const useStyles = makeStyles(theme => ({
     //2010-2014年0-17岁受害人被杀害方式(5.1
     overview6: {
         position: 'absolute',
-        top: 2760,
-        height: 300,
-        left: 230,
-        width:600,
+        top: 2850,
+        height: 400,
+        left: 130,
+        width:700,
     },
     //2010-2014年18-30岁受害人被杀害方式(5.2
     overview7: {
         position: 'absolute',
-        top: 2760,
-        height: 300,
-        width:600,
+        top: 2850,
+        height: 400,
+        width:700,
         left: 850,
     },
 
     paragraph5: {
         position: 'absolute',
-        top: 3080,
+        top: 3270,
         height: 300,
         width: 800,
         left: 450,
@@ -149,15 +149,15 @@ const useStyles = makeStyles(theme => ({
     //作案方式(6
     overview2: {
         position: 'absolute',
-        top: 3400,
-        height: 300,
-        left: 550,
-        width:600,
+        top: 3590,
+        height: 350,
+        width: 800,
+        left: 480,
     },
     
     paragraph6: {
         position: 'absolute',
-        top: 3720,
+        top: 3960,
         height: 300,
         width: 800,
         left: 450,

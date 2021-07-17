@@ -24,7 +24,7 @@ function Overview() {
             series: [
                     {
                     type: 'pie',
-                    radius: '50%',
+                    radius: '70%',
                     avoidLabelOverlap: false,
                     //标签
                     label: {
@@ -54,7 +54,7 @@ function Overview() {
     };
 
     return <div>
-        <ReactEcharts option={getOption()} />;
+        <ReactEcharts option={getOption()} style={{height:"425px"}}/>;
     </div>
 }
 
