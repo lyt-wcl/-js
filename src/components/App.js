@@ -37,7 +37,7 @@ const useStyles = makeStyles(theme => ({
     //右边第一个区域 美国历年（1
     overview: {
         position: 'absolute',
-        top: 70,
+        top: 60,
         height: 350,
         width: 800,
         left: 480,

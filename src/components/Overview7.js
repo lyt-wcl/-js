@@ -44,8 +44,8 @@ function Overview() {
                         {value: 128, name: '毒杀'},
                         {value: 5792, name: '火'}, 
                         {value: 208, name: '窒息'},  
-                        {value: 3960, name: '冷兵器'},                                
-                        {value: 1182,name:'未知'}
+                        {value: 3960, name: '冷兵器',itemStyle:{color:'#2c7fb8'}},                                
+                        {value: 1182,name:'其他',itemStyle:{color:'rgb(82,75,46)'}}
                    ],
                }
             ]

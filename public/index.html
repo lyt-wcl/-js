@@ -16,12 +16,16 @@
       body 
       {
         background-image:url('wall.jpg'); 
+        background-repeat: no-repeat;
+        background-size: cover;
         overflow : scroll;
       }
       .header {
         padding: 150px 50px 480px 50px;
         text-align: right;
-        background-image: url('blood.jpg');
+        background-image: url('gun.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       .header h1{
@@ -42,7 +46,8 @@
 
       /* 导航条 */
       .topnav {
-        
+        position: sticky;
+        top: 500;
         overflow: hidden;
         background-color: #333;
         
@@ -78,6 +83,9 @@
         color: #ffffff;
       }
 
+      .end {
+        text-align: right;
+      }
     </style>
   </head>
   <body>
@@ -102,6 +110,11 @@
     </div>
 
     <div id="root">
+    </div>
+
+    <div id="end">
+      <p>2021数据可视化暑期学校</p>
+      <p>小组成员：石喆予 李毅桐 于悦</p>
     </div>
 
   </body>
