@@ -2,7 +2,7 @@ import React, {useContext} from 'react';
 import {store} from "../store";
 function Paragraph1() {
     return <div>
-        <p>此图展示了1980-2014年美国凶杀案的数量变化。如图所示，123422222223.</p>    
+        <p>通过1980-2014年美国凶杀案数量的变化曲线图，我们可以知道美国凶杀案的数量总体呈下降趋势。</p>    
     </div>;
 }
 
